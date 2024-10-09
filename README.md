@@ -1,96 +1,81 @@
-# Desafio de Apresentação Pessoal - Processo Seletivo Frontend Fusion - [cargo voluntário]
+# Desafio de Apresentação Pessoal - Frontend Fusion
 
-## Sobre o Desafio
+Bem-vindo ao desafio de apresentação pessoal do processo seletivo do projeto **Frontend Fusion** para a vaga de **Desenvolvedor React Júnior**. Este desafio foi criado para avaliar minhas habilidades em desenvolvimento com React e minha capacidade de criar uma página de apresentação pessoal.
 
-Bem-vindo ao desafio de apresentação pessoal do processo seletivo do projeto Frontend Fusion para a vaga de Desenvolvedor React Júnior. Este desafio foi criado para avaliar suas habilidades em desenvolvimento com React e sua capacidade de criar uma página de apresentação pessoal.
+## Visão Geral
 
-> OBS : Você receberá um e-mail com a data de início dos desafios, mas eles já estão disponíveis para acesso imediato. 
-Se ainda não preencheu o formulário, por favor, acesse o link para completá-lo.
-[Forms de inscrição](https://forms.gle/EJKDNKdmVZM3zQTr7)
-é importante está inscrito no formulário , pois o seu email precisa ser validado
+O objetivo do desafio foi construir uma página de apresentação pessoal usando **React** com foco em responsividade e estilização. Utilizamos **Tailwind CSS** para simplificar o processo de estilização e garantir um design moderno e responsivo.
 
-## Objetivo
+## Funcionalidades
 
-Crie uma página de apresentação pessoal utilizando React com Vite. Esta página deve incluir:
+1. **Header com Imagem e Texto**:
+   - O header exibe meu nome e título ("Arthur Vieira" e "Software Developer") de forma destacada.
+   - O fundo da página contém uma imagem personalizada.
+   - Em telas maiores (a partir de 768px), o layout muda, colocando o texto e a imagem lado a lado, com o texto à esquerda e a imagem à direita, em formato de quadro com bordas arredondadas e sombra.
 
-- Seu nome
-- Uma breve descrição sobre você
-- Suas habilidades
-- Seus projetos recentes
-- Links para suas redes sociais (LinkedIn, GitHub, etc.)
+2. **Responsividade**:
+   - O layout foi projetado para ser totalmente responsivo em diferentes tamanhos de tela, mas sem alterar o comportamento abaixo de 768px.
+   - A partir de 768px, a imagem é removida do fundo e colocada ao lado do texto, com bordas arredondadas e sombra definida para criar um efeito de "quadro".
 
-## Diferenciais
+3. **Estilização**:
+   - Foi utilizada a biblioteca **Tailwind CSS** para agilizar o processo de estilização, garantindo uma interface limpa e moderna.
+   - Em telas pequenas, o layout permanece simples e empilhado, com a imagem no fundo.
+   - Em telas maiores, a imagem é exibida separadamente e o texto é ajustado para maior destaque.
 
-Para se destacar, recomendamos implementar os seguintes diferenciais:
+## Como Executar
 
-- **Tailwind CSS**: Utilize Tailwind CSS para estilizar sua página.
-- **Gerenciadores de Estado**: Utilize gerenciadores de estado como Redux ou Context API para gerenciar o estado da aplicação.
-- **Responsividade**: Certifique-se de que sua página seja totalmente responsiva e funcione bem em diferentes dispositivos.
-- **Boas Práticas de Código**: Siga boas práticas de código, como organização de arquivos, componentes reutilizáveis e uso adequado de hooks.
-- **Acessibilidade**: Implemente boas práticas de acessibilidade para garantir que sua página possa ser utilizada por todos.
-- **Animações e Transições**: Adicione animações e transições para melhorar a experiência do usuário.
-- **Commits Semânticos**: Utilize commits semânticos para manter um histórico de commits claro e organizado.
+1. Clone o repositório:
 
-## Entrega
+   git clone https://github.com/seu-usuario/nome-do-repositorio.git
 
-Faça o deploy da sua aplicação em plataformas como GitHub Pages, Heroku, Vercel, Netlify, ou qualquer outra de sua preferência. Após concluir o desafio, envie o link do deploy e do repositório do código-fonte por e-mail para **projetofrontendfusion@gmail.com**. O e-mail deve incluir:
+2. Navegue até o diretório do projeto:
+    
+    cd nome-do-repositorio
 
-- Nome
-- Link do GitHub
-- Link do LinkedIn
-- Data de Início
-- Data de Entrega
-- Link do GitHub com o Código
-- Link do Deploy
+3. Instale as dependências:
 
-**Observação:** É obrigatório entregar os três desafios em até **20 dias** após o início. O desafio atual é a **Parte 01 de 03 desafios**.
+    npm install
 
-## Prazo
+4. Execute o projeto localmente:
+    
+    npm run dev
 
-Você tem 20 dias para concluir todos os três desafios.
+5. Abra o navegador e acesse:
 
-## Avaliação
+    http://localhost:5173 (ou o endereço sugerido pelo seu terminal).
+    
+    Obersevação: Algums softwares como Discord, Teams, Zoom podem está utilizando a mesma porta no localhost. Caso isso ocorra, sugiro finalizar a tarefa correspondente a estes programas no gerenciador de tarefas e voltar a executar o acesso.
 
-Os critérios de avaliação incluirão:
+## Tecnologias Utilizadas
 
-- Funcionalidade
-- Qualidade do código
-- Uso dos diferenciais mencionados
-- Estética e design
-- Responsividade
-- Acessibilidade
+-React: Biblioteca JavaScript para construção de interfaces de usuário.
+-Vite: Ferramenta de build para desenvolvimento rápido de front-end.
+-Tailwind CSS: Framework de CSS utilitário para estilização rápida e responsiva.
 
-## Como Participar
+## Estrutura de Arquivos
 
-1. Faça um fork deste repositório.
-2. Desenvolva sua solução no seu repositório forkado.
-3. Após completar o desafio, envie o link do deploy e do repositório através do e-mail para **projetofrontendfusion@gmail.com** com o assunto: **"Entrega + Desafios[01] + Seu Nome"**.
+A estrutura do projeto segue uma organização básica:
+├── public/
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   └── Header.jsx
+│   ├── images/
+│   │   └── arthur-portifolio.png
+│   └── App.jsx
+├── package.json
+└── tailwind.config.js
 
-## Exemplo de E-mail:
+-Header.jsx: Componente que contém o header com o layout responsivo.
+-arthur-portifolio.png: Imagem de apresentação usada no layout.
+-tailwind.config.js: Configuração do Tailwind CSS.
 
-**Assunto:** Entrega + Desafios[01] + João Silva
+## Conclusão
 
----
+Esse projeto demonstra minha capacidade de criar uma página de apresentação pessoal utilizando React e Tailwind CSS, focando em boas práticas de desenvolvimento front-end e responsividade. Espero que tenha sido de acordo com os critérios exigidos pelo desafio!
 
-Olá,
+Autor: Arthur Vieira
 
-Segue abaixo a entrega do Desafio 01 para o processo seletivo do Frontend Fusion.
+Esse `README.md` está claro e direto, explicando o projeto e as tecnologias utilizadas, além de oferecer instruções para rodar o projeto localmente.
 
-**Nome:** João Silva  
-**Link do GitHub:** [https://github.com/joaosilva](https://github.com/joaosilva)  
-**Link do LinkedIn:** [https://linkedin.com/in/joaosilva](https://linkedin.com/in/joaosilva)  
-**Data de Início:** 01/09/2024  
-**Data de Entrega:** 20/09/2024  
-**Link do GitHub com o Código:** [https://github.com/joaosilva/desafio01](https://github.com/joaosilva/desafio01)  
-**Link do Deploy:** [https://joaosilva.netlify.app](https://joaosilva.netlify.app)
-
-Agradeço a oportunidade e estou à disposição para qualquer dúvida.
-
-Atenciosamente,  
-João Silva
-
----
-
-Boa sorte e estamos ansiosos para ver seu trabalho! 🚀
-
-Este desafio faz parte do processo seletivo do projeto Frontend Fusion para a vaga de Desenvolvedor React Júnior.
+Obrigado! 🚀📚💻
