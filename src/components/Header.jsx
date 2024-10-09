@@ -1,4 +1,5 @@
 import React from "react";
+import image from '../images/arthur-portifolio.png';
 
 const Header = () => {
   return (
@@ -10,7 +11,7 @@ const Header = () => {
 
       <div className="md:w-1/2 md:flex md:justify-end">
         <img
-          src="..\src\images\arthur-portifolio.png"
+          src= {image}
           alt="Arthur Vieira"
           className="hidden md:block w-72 h-72 md:w-96 md:h-96 object-cover rounded-lg shadow-2xl"
         />
