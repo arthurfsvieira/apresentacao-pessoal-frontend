@@ -2,14 +2,14 @@ import React from 'react';
 
 const Projects = () => {
   const projects = [
-    { name: 'Sistema de Cotação de Seguros', link: '#' },
-    { name: 'Página de Flexbox para Estudo', link: '#' },
-    { name: 'Interações com JavaScript', link: '#' }
+    { name: 'Insurance Quotation System', link: 'https://github.com/arthurfsvieira/cotacao-seguros' },
+    { name: 'Responsive Hero Cards', link: 'https://github.com/arthurfsvieira/hero-cards' },
+    { name: 'Pizza Cart with JS', link: 'https://github.com/arthurfsvieira/pizza_base' }
   ];
 
   return (
     <section className="max-w-3xl mx-auto text-center py-10">
-      <h2 className="text-3xl font-semibold mb-4">Projetos Recentes</h2>
+      <h2 className="text-3xl font-semibold mb-4">Recent Projects</h2>
       <ul className="space-y-4">
         {projects.map((project, index) => (
           <li key={index}>

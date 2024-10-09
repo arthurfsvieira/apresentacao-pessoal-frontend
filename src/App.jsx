@@ -10,7 +10,7 @@ import SocialLinks from './components/SocialLinks';
 function App() {
 
   return (
-    <div>
+    <div className='bg-slate-800 rounded-lg overflow-hidden border-none'>
       <Header/>
       <About/>
       <Skills/>
